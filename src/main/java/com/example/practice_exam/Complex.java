@@ -16,22 +16,6 @@ public class Complex {
         this.b = b;
     }
 
-    public double getA() {
-        return a;
-    }
-
-    public void setA(double a) {
-        this.a = a;
-    }
-
-    public double getB() {
-        return b;
-    }
-
-    public void setB(double b) {
-        this.b = b;
-    }
-
     public void nhap(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Nhap vao phan so thuc: ");
@@ -75,22 +59,21 @@ public class Complex {
         double ao = (otherNumber.a * b - a * otherNumber.b) / (otherNumber.a * otherNumber.a + otherNumber.b * otherNumber.b);
         return new  Complex(thuc, ao);
     }
-    public void setRealPart (double realPart){
-        return ;
+    public double getA() {
+        return a;
     }
 
-    public void setImaginaryPart (double realPart){
-        return;
+    public void setA(double a) {
+        this.a = a;
     }
 
-    public double getRealPart (){
-        return getRealPart();
+    public double getB() {
+        return b;
     }
 
-    public double getImaginaryPart (){
-        return getImaginaryPart();
+    public void setB(double b) {
+        this.b = b;
     }
-
     @Override
     public String toString() {
         String re = this.a+"";
